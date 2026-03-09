@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login / Signup - Humanity Health Network</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background-color: #fff5f5; color: #333; }
+    header, footer { background-color: #bf0000; color: white; text-align: center; padding: 20px; }
+    nav { background-color: #002366; overflow: hidden; }
+    nav a { float: left; display: block; color: white; padding: 14px 20px; text-decoration: none; }
+    nav a:hover { background-color: #003399; }
+    .container { padding: 30px; max-width: 600px; margin: auto; }
+    h2 { color: #bf0000; text-align: center; }
+    form { background: white; padding: 20px; border-radius: 8px; border-left: 6px solid #002366; margin-bottom: 30px; }
+    label { display: block; margin-top: 15px; font-weight: bold; }
+    input[type="text"], input[type="password"], input[type="email"] {
+      width: 100%; padding: 10px; margin-top: 5px; border-radius: 4px; border: 1px solid #ccc;
+    }
+    button { background-color: #002366; color: white; padding: 10px 20px; border: none; border-radius: 4px; margin-top: 20px; cursor: pointer; }
+    button:hover { background-color: #003399; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Member Access</h1>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="services.html">Services</a>
+  <a href="reviews.html">Reviews</a>
+  <a href="volunteer.html">Volunteer/Donate</a>
+  <a href="login.html">Login/Signup</a>
+</nav>
+
+<div class="container">
+  <h2>Login</h2>
+  <form onsubmit="return loginUser();">
+    <label for="login-username">Username:</label>
+    <input type="text" id="login-username" required>
+
+    <label for="login-password">Password:</label>
+    <input type="password" id="login-password" required>
+
+    <button type="submit">Login</button>
+  </form>
+
+  <h2>Signup</h2>
+  <form onsubmit="return registerUser();">
+    <label for="signup-email">Email:</label>
+    <input type="email" id="signup-email" required>
+
+    <label for="signup-username">Username:</label>
+    <input type="text" id="signup-username" required>
+
+    <label for="signup-password">Password:</label>
+    <input type="password" id="signup-password" required>
+
+    <button type="submit">Signup</button>
+  </form>
+</div>
+
+<footer>
+  <p>&copy; 2025 Humanity Health Network. All rights reserved.</p>
+</footer>
+
+<script>
+  // Simple demo user system for fake login
+  const users = [{ username: "admin", password: "admin123" }, { username: "volunteer", password: "hhnetwork" }];
+
+  function loginUser() {
+    const uname = document.getElementById('login-username').value;
+    const pwd = document.getElementById('login-password').value;
+    const found = users.find(u => u.username === uname && u.password === pwd);
+    if (found) {
+      alert("Login successful. Welcome, " + uname + "!");
+    } else {
+      alert("Invalid credentials. Please try again.");
+    }
+    return false; // prevent actual form submission
+  }
+
+  function registerUser() {
+    const email = document.getElementById('signup-email').value;
+    const uname = document.getElementById('signup-username').value;
+    const pwd = document.getElementById('signup-password').value;
+    if (uname && pwd && email) {
+      alert("Signup successful. Welcome, " + uname + "!");
+    }
+    return false; // prevent actual form submission
+  }
+</script>
+
+</body>
+</html>

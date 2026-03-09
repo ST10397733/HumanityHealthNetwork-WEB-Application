@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reviews - Humanity Health Network</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background-color: #fff5f5; color: #333; }
+    header, footer { background-color: #bf0000; color: white; text-align: center; padding: 20px; }
+    nav { background-color: #002366; overflow: hidden; }
+    nav a { float: left; display: block; color: white; padding: 14px 20px; text-decoration: none; }
+    nav a:hover { background-color: #003399; }
+    .content { padding: 30px; max-width: 800px; margin: auto; }
+    h2 { color: #bf0000; }
+    .review { background-color: white; border-left: 5px solid #002366; padding: 20px; margin: 20px 0; border-radius: 8px; }
+    .name { font-weight: bold; color: #002366; }
+    .location { font-style: italic; color: #666; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Community Feedback</h1>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="services.html">Services</a>
+  <a href="reviews.html">Reviews</a>
+  <a href="volunteer.html">Volunteer/Donate</a>
+  <a href="login.html">Login/Signup</a>
+</nav>
+
+<div class="content">
+  <h2>What People Are Saying</h2>
+
+  <div class="review">
+    <p>"The mobile clinic helped my mother receive medication without traveling 30km. You saved her life."</p>
+    <p class="name">— Lerato M., <span class="location">Tzaneen, Limpopo</span></p>
+  </div>
+
+  <div class="review">
+    <p>"As a volunteer, I feel empowered. I never imagined making such a difference in my own village."</p>
+    <p class="name">— Samkelo D., <span class="location">Giyani, Limpopo</span></p>
+  </div>
+
+  <div class="review">
+    <p>"My son learned about hygiene from the youth workshop. Our family is healthier now thanks to HHN."</p>
+    <p class="name">— Anonymous Parent, <span class="location">Bushbuckridge</span></p>
+  </div>
+
+  <div class="review">
+    <p>"The trauma counseling I received helped me feel seen and heard for the first time in years."</p>
+    <p class="name">— Thandiwe K., <span class="location">Venda</span></p>
+  </div>
+
+  <div class="review">
+    <p>"These are real people doing real work — not promises. Proud to be part of something this honest."</p>
+    <p class="name">— Anonymous Volunteer, <span class="location">Sekhukhune</span></p>
+  </div>
+</div>
+<h2>Enter Reviews</h2>
+<p>We’d love to hear your feedback! Share your experience below:</p>
+
+<!-- Review Form -->
+<form id="reviewForm" style="margin-bottom: 20px;">
+  <label for="reviewerName">Your Name:</label><br>
+  <input type="text" id="reviewerName" name="reviewerName" placeholder="Enter your name" required><br><br>
+
+  <label for="reviewText">Your Review:</label><br>
+  <textarea id="reviewText" name="reviewText" rows="4" cols="50" placeholder="Write your review here..." required></textarea><br><br>
+
+  <button type="submit">Submit Review</button>
+</form>
+
+<!-- Display Area -->
+<h3>What Others Say:</h3>
+<div id="reviewSection" style="border-top: 2px solid #ccc; padding-top: 10px;">
+  <!-- New reviews will appear here -->
+</div>
+
+<script>
+  const reviewForm = document.getElementById('reviewForm');
+  const reviewSection = document.getElementById('reviewSection');
+
+  reviewForm.addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent page reload
+
+    const name = document.getElementById('reviewerName').value;
+    const text = document.getElementById('reviewText').value;
+
+    // Create a new review box
+    const reviewBox = document.createElement('div');
+    reviewBox.style.border = "1px solid #ddd";
+    reviewBox.style.padding = "10px";
+    reviewBox.style.margin = "10px 0";
+    reviewBox.style.borderRadius = "5px";
+    reviewBox.style.backgroundColor = "#f9f9f9";
+
+    // Add name and review text
+    const reviewerName = document.createElement('h4');
+    reviewerName.textContent = name;
+    reviewerName.style.marginBottom = "5px";
+    reviewerName.style.color = "#2c3e50";
+
+    const reviewText = document.createElement('p');
+    reviewText.textContent = text;
+    reviewText.style.margin = "0";
+
+    // Append them to the box
+    reviewBox.appendChild(reviewerName);
+    reviewBox.appendChild(reviewText);
+
+    // Add the new review to the display section
+    reviewSection.prepend(reviewBox);
+
+    // Clear form
+    reviewForm.reset();
+  });
+</script>
+
+<footer>
+  <p>&copy; 2025 Humanity Health Network. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

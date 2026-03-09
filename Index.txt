@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Humanity Health Network - Home</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f5f5f5; color: #333; }
+    header { background-color: #0277bd; color: white; padding: 20px; text-align: center; }
+    nav { background-color: #01579b; overflow: hidden; }
+    nav a { float: left; display: block; color: white; padding: 14px 20px; text-decoration: none; }
+    nav a:hover { background-color: #0288d1; }
+    .hero { background: url('https://www.doctorswithoutborders.org/themes/custom/dwb_theme/images/photos/field-msf.jpg') no-repeat center center/cover; height: 400px; display: flex; align-items: center; justify-content: center; color: white; font-size: 2em; font-weight: bold; text-shadow: 2px 2px 8px black; }
+    .content { padding: 20px; background-color: white; }
+    .section { margin-bottom: 40px; }
+    footer { background-color: #263238; color: white; padding: 20px; text-align: center; font-size: 0.9em; }
+    form input, form select, form textarea { width: 100%; padding: 10px; margin: 10px 0; }
+    form button { background-color: #0277bd; color: white; padding: 10px 20px; border: none; cursor: pointer; }
+    form button:hover { background-color: #01579b; }
+    .logo { display: block; margin: 0 auto 20px auto; width: 150px; height: auto; }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="HHN.jpg" alt="Humanity Health Network Logo" class="logo">
+  <h1>Humanity Health Network</h1>
+  <p>Bridging Healthcare and Communities in Rural South Africa</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="services.html">Services</a>
+  <a href="reviews.html">Reviews</a>
+  <a href="volunteer.html">Volunteer/Donate</a>
+  <a href="login.html">Login/Signup</a>
+</nav>
+
+<div class="hero">
+  Empowering Health in Remote Communities
+</div>
+
+<div class="content">
+  <div class="section">
+    <h2>Our Mission</h2>
+    <p>We are a nonprofit organization dedicated to bringing essential health services to underserved communities across South Africa. Our goal is to close the healthcare access gap for rural populations by delivering education, care, and empowerment directly to those in need.</p>
+  </div>
+
+  <div class="section">
+    <h2>What We Do</h2>
+    <ul>
+      <li>Deploy mobile medical clinics to rural villages</li>
+      <li>Partner with local community leaders and clinics</li>
+      <li>Educate the public on sanitation, nutrition, and preventative care</li>
+      <li>Distribute essential supplies and medication</li>
+      <li>Advocate for healthcare rights in South Africa's rural zones</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Inspired by Global Movements</h2>
+    <p>We draw inspiration from Doctors Without Borders, customizing their humanitarian model to fit the rural South African context. Our interventions are driven by compassion, dignity, and the belief that healthcare is a universal human right.</p>
+    <img src="https://www.doctorswithoutborders.org/themes/custom/dwb_theme/images/photos/field-team.jpg" alt="Field Doctors" style="width:100%;height:auto;">
+  </div>
+
+  <div class="section">
+    <h2>Why It Matters</h2>
+    <p>Millions of South Africans in rural areas still lack access to basic healthcare. We step in where the traditional system falls short, creating a people-centered network that puts health and humanity first. By volunteering, donating, or spreading awareness, you help us reach farther.</p>
+  </div>
+
+  <div class="section">
+    <h2>Get Involved</h2>
+    <p>Our success depends on your support. Visit our Volunteer/Donate page to learn how you can contribute your time, resources, or voice to this vital mission.</p>
+  </div>
+</div>
+
+<footer>
+  <p>Disclaimer: Humanity Health Network is a nonprofit educational initiative and does not offer emergency or inpatient medical services. This website is for informational purposes only and not a substitute for professional care.</p>
+  <p>&copy; 2025 Humanity Health Network. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

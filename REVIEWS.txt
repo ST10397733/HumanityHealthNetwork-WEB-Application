@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reviews - Humanity Health Network</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background-color: #fff5f5; color: #333; }
+    header, footer { background-color: #bf0000; color: white; text-align: center; padding: 20px; }
+    nav { background-color: #002366; overflow: hidden; }
+    nav a { float: left; display: block; color: white; padding: 14px 20px; text-decoration: none; }
+    nav a:hover { background-color: #003399; }
+    .content { padding: 30px; max-width: 800px; margin: auto; }
+    h2 { color: #bf0000; }
+    .review { background-color: white; border-left: 5px solid #002366; padding: 20px; margin: 20px 0; border-radius: 8px; }
+    .name { font-weight: bold; color: #002366; }
+    .location { font-style: italic; color: #666; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Community Feedback</h1>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="services.html">Services</a>
+  <a href="reviews.html">Reviews</a>
+  <a href="volunteer.html">Volunteer/Donate</a>
+  <a href="login.html">Login/Signup</a>
+</nav>
+
+<div class="content">
+  <h2>What People Are Saying</h2>
+
+  <div class="review">
+    <p>"The mobile clinic helped my mother receive medication without traveling 30km. You saved her life."</p>
+    <p class="name">— Lerato M., <span class="location">Tzaneen, Limpopo</span></p>
+  </div>
+
+  <div class="review">
+    <p>"As a volunteer, I feel empowered. I never imagined making such a difference in my own village."</p>
+    <p class="name">— Samkelo D., <span class="location">Giyani, Limpopo</span></p>
+  </div>
+
+  <div class="review">
+    <p>"My son learned about hygiene from the youth workshop. Our family is healthier now thanks to HHN."</p>
+    <p class="name">— Anonymous Parent, <span class="location">Bushbuckridge</span></p>
+  </div>
+
+  <div class="review">
+    <p>"The trauma counseling I received helped me feel seen and heard for the first time in years."</p>
+    <p class="name">— Thandiwe K., <span class="location">Venda</span></p>
+  </div>
+
+  <div class="review">
+    <p>"These are real people doing real work — not promises. Proud to be part of something this honest."</p>
+    <p class="name">— Anonymous Volunteer, <span class="location">Sekhukhune</span></p>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 Humanity Health Network. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

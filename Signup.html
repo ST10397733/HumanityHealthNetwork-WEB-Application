@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(135deg, royalblue, crimson);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .signup-container {
+      background-color: white;
+      padding: 2em;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      width: 380px;
+      text-align: center;
+      border-top: 6px solid crimson;
+    }
+    h2 {
+      margin-bottom: 1em;
+      color: royalblue;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+      transition: border-color 0.2s;
+    }
+    input:focus, select:focus {
+      border-color: crimson;
+      outline: none;
+    }
+    button {
+      background-color: crimson;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      width: 100%;
+      cursor: pointer;
+      font-size: 1em;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: royalblue;
+    }
+    p {
+      margin-top: 1em;
+      font-size: 0.9em;
+      color: #444;
+    }
+    a {
+      color: royalblue;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    a:hover {
+      color: crimson;
+    }
+  </style>
+</head>
+<body>
+  <div class="signup-container">
+    <h2>Sign Up</h2>
+    <form id="signupForm">
+      <select id="role" required>
+        <option value="" disabled selected>Select Role</option>
+        <option value="user">User</option>
+        <option value="admin">Admin</option>
+      </select>
+      <input type="text" id="username" placeholder="Create Username" required />
+      <input type="password" id="password" placeholder="Create Password" required />
+      <button type="submit">Sign Up</button>
+    </form>
+    <p>Already have an account? <a href="LOGIN.html">Login here</a></p>
+  </div>
+
+  <script>
+    document.getElementById("signupForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const role = document.getElementById("role").value;
+      const username = document.getElementById("username").value.trim();
+      const password = document.getElementById("password").value.trim();
+
+      if (!role || !username || !password) {
+        alert("Please fill in all fields.");
+        return;
+      }
+
+      const users = JSON.parse(localStorage.getItem("users")) || {};
+
+      if (users[username]) {
+        alert("Username already exists! Please log in instead.");
+        window.location.href = "LOGIN.html";
+        return;
+      }
+
+      users[username] = { username, password, role };
+      localStorage.setItem("users", JSON.stringify(users));
+
+      alert("Account created successfully! Please log in.");
+      window.location.href = "LOGIN.html";
+    });
+  </script>
+</body>
+</html>

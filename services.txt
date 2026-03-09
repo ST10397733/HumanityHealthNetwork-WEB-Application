@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Services - Humanity Health Network</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background-color: #fff5f5; color: #333; }
+    header, footer { background-color: #bf0000; color: white; text-align: center; padding: 20px; }
+    nav { background-color: #002366; overflow: hidden; }
+    nav a { float: left; display: block; color: white; padding: 14px 20px; text-decoration: none; }
+    nav a:hover { background-color: #003399; }
+    .content { padding: 30px; max-width: 1000px; margin: auto; }
+    .section { margin-bottom: 50px; }
+    h2 { color: #bf0000; }
+    .service-box { background: white; border-left: 6px solid #002366; padding: 20px; border-radius: 8px; margin-bottom: 30px; }
+    .service-box img { width: 100%; border-radius: 8px; margin-top: 15px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Our Services</h1>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="services.html">Services</a>
+  <a href="reviews.html">Reviews</a>
+  <a href="volunteer.html">Volunteer/Donate</a>
+  <a href="login.html">Login/Signup</a>
+</nav>
+
+<div class="content">
+
+  <div class="section">
+    <div class="service-box">
+      <h2>Mobile Clinics</h2>
+      <p>Our solar-powered mobile health vans provide primary care, wound treatment, maternal care, and child vaccinations directly to remote villages. Each unit is staffed by qualified nurses and health advocates from local communities.</p>
+      <img src="https://www.msf.org/sites/default/files/styles/media_crop/public/2022-10/south-africa-maternal-health-clinic.jpg" alt="Mobile Clinic">
+    </div>
+
+    <div class="service-box">
+      <h2>Health Education Campaigns</h2>
+      <p>Through school visits, community talks, and printed material in local languages, we promote awareness on topics like sanitation, chronic illness, HIV/AIDS, reproductive health, and nutrition.</p>
+      <img src="https://www.msf.org/sites/default/files/styles/media_crop/public/2023-01/community-health-awareness.jpg" alt="Health Education">
+    </div>
+
+    <div class="service-box">
+      <h2>Volunteer & Youth Programs</h2>
+      <p>We train youth leaders as Community Health Advocates who support wellness efforts in their hometowns. Our volunteers gain practical experience, leadership skills, and leave lasting community impact.</p>
+      <img src="https://www.msf.org/sites/default/files/styles/media_crop/public/2021-07/youth-volunteers-africa.jpg" alt="Youth Program">
+    </div>
+
+    <div class="service-box">
+      <h2>Mental Health & Trauma Support</h2>
+      <p>In partnership with local psychologists and spiritual leaders, we offer group sessions and referral-based mental health services to victims of violence, substance abuse, and family trauma.</p>
+      <img src="https://www.msf.org/sites/default/files/styles/media_crop/public/2021-03/msf-counseling-africa.jpg" alt="Counseling Session">
+    </div>
+
+    <div class="service-box">
+      <h2>Telehealth & Remote Consultations</h2>
+      <p>Coming soon: Our new telehealth units will allow patients in rural Limpopo and beyond to speak to specialists in real-time via satellite-supported tablets, reducing referral delays.</p>
+      <img src="https://www.msf.org/sites/default/files/styles/media_crop/public/2020-10/telemedicine-village.jpg" alt="Telemedicine">
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>&copy; 2025 Humanity Health Network. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

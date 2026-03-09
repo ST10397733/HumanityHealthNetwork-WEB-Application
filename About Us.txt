@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us - Humanity Health Network</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background-color: #fff5f5; color: #333; }
+    header, footer { background-color: #bf0000; color: white; text-align: center; padding: 20px; }
+    nav { background-color: #002366; overflow: hidden; }
+    nav a { float: left; display: block; color: white; padding: 14px 20px; text-decoration: none; }
+    nav a:hover { background-color: #003399; }
+    .content { padding: 30px; max-width: 900px; margin: auto; }
+    .section { margin-bottom: 40px; }
+    h2 { color: #bf0000; }
+    .bio { background: #fefefe; border-left: 4px solid #002366; padding: 15px; margin-bottom: 20px; border-radius: 4px; }
+    .stats { display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-around; text-align: center; }
+    .stat-box { background-color: white; border: 2px solid #002366; border-radius: 8px; padding: 20px; flex: 1 1 250px; }
+    .stat-box h3 { color: #bf0000; font-size: 2em; margin: 0; }
+    .stat-box p { margin: 10px 0 0; font-size: 1.1em; }
+    .impact-image { width: 100%; border-radius: 8px; margin-top: 20px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>About Humanity Health Network</h1>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="services.html">Services</a>
+  <a href="reviews.html">Reviews</a>
+  <a href="volunteer.html">Volunteer/Donate</a>
+  <a href="login.html">Login/Signup</a>
+</nav>
+
+<div class="content">
+  <div class="section">
+    <h2>Founders' Story</h2>
+    <p>Humanity Health Network was founded in 2017 by Thendo Phume, Denzel Damari, and Ualinda Siala, three passionate health advocates from Limpopo. After witnessing first-hand the devastating impact of inaccessible healthcare in their rural hometowns, they united around a shared vision: to create a people-powered organization that delivers vital care, education, and dignity to underserved South African communities.</p>
+  </div>
+
+  <div class="section">
+    <h2>Future Milestones</h2>
+    <ul>
+      <li><strong>2026:</strong> Establish the first permanent rural health hub in Limpopo</li>
+      <li><strong>2027:</strong> Launch solar-powered telemedicine units in 10 new villages</li>
+      <li><strong>2028:</strong> Train 500 new Community Health Advocates nationwide</li>
+      <li><strong>2029:</strong> Develop mobile maternal care program for remote expectant mothers</li>
+      <li><strong>2030:</strong> Expand cross-border outreach to neighboring rural regions in Southern Africa</li>
+      <li><strong>2031:</strong> Build a national digital health records platform for rural clinics</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Impact by the Numbers</h2>
+    <div class="stats">
+      <div class="stat-box">
+        <h3>62,000+</h3>
+        <p>Rural lives impacted since 2017</p>
+      </div>
+      <div class="stat-box">
+        <h3>320+</h3>
+        <p>Volunteers trained and deployed</p>
+      </div>
+      <div class="stat-box">
+        <h3>45</h3>
+        <p>Villages regularly served by mobile clinics</p>
+      </div>
+      <div class="stat-box">
+        <h3>92%</h3>
+        <p>Increase in local health literacy reported</p>
+      </div>
+    </div>
+    <img src="https://www.doctorswithoutborders.org/sites/default/files/styles/image_card/public/2022-06/DRC_CapAnel_MSFLWA003_SouthKivu_20220429_1.jpg" alt="Community Health Workers" class="impact-image">
+  </div>
+
+  <div class="section">
+    <h2>Meet the Team</h2>
+    <div class="bio">
+      <strong>Thendo Phume</strong> – Director of Field Operations<br>
+      A community organizer with deep experience in health activism, Thendo oversees mobile outreach efforts and local training programs.
+    </div>
+    <div class="bio">
+      <strong>Denzel Damari</strong> – Executive Strategy Lead<br>
+      A social entrepreneur focused on innovation and sustainability, Denzel drives partnerships, funding, and expansion.
+    </div>
+    <div class="bio">
+      <strong>Ualinda Siala</strong> – Health Education Coordinator<br>
+      An educator and public health advocate, Ualinda develops culturally grounded health campaigns and works directly with schools and community groups.
+    </div>
+    <div class="bio">
+      <strong>Ayesha Patel</strong> – Communications & Media Officer<br>
+      Handles storytelling, digital outreach, and donor communication to amplify the voices of those we serve.
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 Humanity Health Network. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
